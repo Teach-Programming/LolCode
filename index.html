@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Lolcode by Teach-Programming</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Lolcode</h1>
+      <h2 class="project-tagline">a GetStart with lolCode sheet - don&#39;t laugh too loudly</h2>
+      <a href="https://github.com/Teach-Programming/LolCode" class="btn">View on GitHub</a>
+      <a href="https://github.com/Teach-Programming/LolCode/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/Teach-Programming/LolCode/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <h1>
+<a id="1-introduction" class="anchor" href="#1-introduction" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>1. INTRODUCTION</h1>
+
+<p>We're going to be using a website called <a href="http://www.repl.it">www.repl.it</a> to have fun with lolcode.</p>
+
+<ul>
+<li>Open repl.it (ctrl-left click or right click and open in a new tab) <a href="http://repl.it/languages/LOLCODE">repl.it/languages/LOLCODE</a>
+</li>
+</ul>
+
+<p>Don't forget the buttons in the top bar regularly:</p>
+
+<ul>
+<li><p>Run - when you want to test your code</p></li>
+<li><p>Save - when you think it works and you wanna share</p></li>
+</ul>
+
+<p><img src="http://i.imgur.com/l3EsgJk.png" alt="Imgur"></p>
+
+<p><img src="http://www.lolcats.com/images/u/11/46/lolcatsdotcomqc2oos4nrd7aymcl.jpg" alt="catz"></p>
+
+<h1>
+<a id="2-output" class="anchor" href="#2-output" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>2. OUTPUT</h1>
+
+<p><code>VISIBLE</code> prints to the standard output. </p>
+
+<p>So our ubiquitous 'Hello World' program becomes:</p>
+
+<pre><code>HAI 1.2
+    VISIBLE "HAI, WORLD!!!
+KTHXBYE
+</code></pre>
+
+<p><em>Add hip comments to your code using BTW for single line comments and OBTW / TLDR for multiline comments, like in my hello world program below.</em></p>
+
+<p><img src="http://i.imgur.com/Gc6oLcE.png" alt="Imgur"></p>
+
+<p><img src="http://www.lolcats.com/images/u/07/35/lolcatsdotcom8514whl5iwcfrm1k.jpg" alt="catz"></p>
+
+<h1>
+<a id="3-input" class="anchor" href="#3-input" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>3. INPUT</h1>
+
+<p>Variables are declared using <code>I HAS A</code>, and the variables can be initialized on the same line using using <code>ITZ</code>.</p>
+
+<p>Or we can ask the user for values using <code>GIMMEH</code>. In some systems it brings up a modal dialog box, other systems wait for command line entry.</p>
+
+<pre><code>HAI 1.2
+    I HAS A KITTEH
+    GIMMEH KITTEH
+    VISIBLE "HAI, ", KITTEH
+KTHXBYE
+</code></pre>
+
+<p><em>repl.it waits on the command line, as you can see when I run my program below:</em></p>
+
+<p><img src="http://i.imgur.com/lAlxL1r.png" alt="Imgur"></p>
+
+<p><img src="http://www.lolcats.com/images/u/08/50/lolcatsdotcomrq4lywopmz2tyzsb.jpg" alt="catz"></p>
+
+<h1>
+<a id="4-conditionals" class="anchor" href="#4-conditionals" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>4. CONDITIONALS</h1>
+
+<p>The conditional <code>if (Var1 == Var2){}</code> is represented as <code>BOTH SAEM Var1 AN Var2</code> and <code>O RLY?</code>, on a new line.</p>
+
+<p>The true condition has <code>YA RLY</code> and, of course, you can do nested conditions with <code>GIMME</code>. Like in the example below:</p>
+
+<pre><code>HAI 1.2
+
+I HAS A ANIMAL
+GIMMEH ANIMAL
+
+BOTH SAEM ANIMAL AN "CAT"
+O RLY?
+    YA RLY, VISIBLE "J00 HAV A CAT"
+    MEBBE BOTH SAEM ANIMAL AN "MAUS"
+        VISIBLE "NOM NOM NOM. I EATED IT."
+OIC
+
+KTHXBYE
+</code></pre>
+
+<p><em>I hope you liek the cool cat code, the results from my program look like this:</em></p>
+
+<p><img src="http://i.imgur.com/LoJEg1O.png" alt="Imgur"></p>
+
+<p><img src="http://www.lolcats.com/images/u/08/51/lolcatsdotcomo1gehe7hiqmn05ig.jpg" alt="catz"></p>
+
+<h1>
+<a id="5-switch-statements" class="anchor" href="#5-switch-statements" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>5. SWITCH STATEMENTS</h1>
+
+<p>Multiple conditions can usually be written more neatly  as a Switch/Case statement, this is represented as <code>Var, WTF? and OMG Val</code> for the switch / case.</p>
+
+<p>So, the nested conditions of the cat &amp; mouse game from the previous slide can be rewritten like the example below:</p>
+
+<pre><code>HAI 1.2
+I HAS A KITTEH
+GIMMEH KITTEN
+
+KITTEH, WTF?
+    OMG "CAT"
+       VISIBLE "J00 HAV A CAT"
+       GTFO
+    OMG "MAUS"
+       VISIBLE "NOM NOM NOM. I EATED IT."
+       GTFO
+    OMGWTF
+OIC
+
+KTHXBYE
+</code></pre>
+
+<p><em>The results from my code look like this:</em></p>
+
+<p><img src="http://i.imgur.com/nBedbq1.png" alt="Imgur"></p>
+
+<p><img src="http://www.lolcats.com/images/u/08/30/lolcatsdotcomdoozp810tzfcq0up.jpg" alt="catz"></p>
+
+<h1>
+<a id="6-loops" class="anchor" href="#6-loops" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>6. LOOPS</h1>
+
+<p>Loops are a succinct way of representing repetition, this is represented as ''' IM IN YR LOOP / IM OUTTA YR LOOP'''.</p>
+
+<p>So, the classic game of 'I ate a ...' can be rewritten like this:</p>
+
+<pre><code>HAI 1.2
+
+I HAS A KITTEH ITZ "Katz"
+I HAS A IDIOT ITZ 0
+
+IM IN YR LOOP UPPIN YR IDIOT TIL BOTH SAEM AN 10
+   BOTH SAEM IDIOT AN 8, O RLY?
+      YA RLY
+         VISIBLE "COOL, I ATE A ", KITTEH
+      NO WAI
+         VISIBLE "COOL! I " IDIOT " A " KITTEH
+   OIC
+IM OUTTA YR LOOP
+
+KTHXBYE
+</code></pre>
+
+<p><em>The results from my code look like this:</em></p>
+
+<p><img src="http://i.imgur.com/fHFRust.png" alt="Imgur"></p>
+
+<p><img src="http://www.lolcats.com/images/u/11/45/lolcatsdotcom3gp6wm7dw3jihq9t.jpg" alt="catz"></p>
+
+<h1>
+<a id="7-functions" class="anchor" href="#7-functions" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>7. FUNCTIONS</h1>
+
+<p>Functions are a useful way of putting statements together, so that they are easier to understand and reduce the amount of typing you have to do.</p>
+
+<p>Functions are declared using <code>HOW DUZ I FunctionName YR Var / IF U SAY SO</code></p>
+
+<p>So, our cat &amp; mouse game can be refactored like this:</p>
+
+<pre><code>HAI 1.2
+
+HOW DUZ I TASTEH YR BEAST
+
+BEAST, WTF?
+    OMG "CAT"
+       VISIBLE "J00 HAV A CAT"
+       GTFO
+    OMG "MAUS"
+       VISIBLE "NOM NOM NOM. I EATED IT."
+       GTFO
+    OMGWTF
+OIC
+
+IF U SAY SO
+
+I HAS A ANIMAL
+GIMME ANIMAL
+
+TASTEH ANIMAL
+
+KTHXBYE
+</code></pre>
+
+<p><em>The results of my code look like this:</em></p>
+
+<p><img src="http://i.imgur.com/HIbI1Rr.png" alt="Imgur"></p>
+
+<p><img src="http://www.lolcats.com/images/u/11/49/lolcatsdotcomii0sbc7g7dpgu21m.jpg" alt="catz"></p>
+
+<h1>
+<a id="8-a-lol-app" class="anchor" href="#8-a-lol-app" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>8. A LOL APP</h1>
+
+<p>Ok, even though Lolcode is Turing complete, some people don't believe that it is a proper language, so here after all the games let's do some proper work!</p>
+
+<p>Everybody knows the Fibonacci Sequence, named for Leonado Pisano, who brought the Arabic numerals into European mathematics and the superior technology of Arabic arithmetic that we all learn today.</p>
+
+<p>Fun fact: Leonado Pisano, also known as Fibonacci (son of Bonacci), did absolutely nothing with the sequence that bears his name. But never mind, Fibonacci deserves to be remembered for his great contribution to numberacy.</p>
+
+<p>The sequence is 1 1 2 3 5 8 13 21 - each number is given as the some of the previous 2 numbers. 1 + 1 = 2, 1 + 2 = 3 etc</p>
+
+<ul>
+<li>This neatly gives the generating function of the sequence,</li>
+</ul>
+
+<p>It ain't Poetry but it seems to work - it gives:</p>
+
+<ul>
+<li>Fibonacci rule F_n = F_{n-1} + F_{n-2}.</li>
+</ul>
+
+<p>Which we can program easily with a function that calls itself twice!</p>
+
+<pre lang="lolcode"><code>HAI 1.2
+
+HOW DUZ I FIBONACCEH YR NUMBEH
+
+  I HAS A NUMBE
+  I HAS A NUMB
+  I HAS A NUMNUM
+  NUMBE R DIFF OF NUMBEH AN 1
+  NUMB R DIFF OF NUMBE AN 1
+
+  NUMBEH, WTF?
+    OMG 0
+       FOUND YR 0
+       GTFO
+    OMG 1
+       FOUND YR 1
+       GTFO
+    OMGWTF
+       NUMNUM R SUM OF FIBONACCEH NUMBE AN FIBONACCEH NUMB
+       FOUND YR NUMNUM
+       GTFO
+  OIC
+IF U SAY SO
+
+I HAS A LOLCAT ITZ 16
+I HAS A VAR ITZ 1
+
+IM IN YR LOOP UPPIN YR VAR TIL BOTH SAEM VAR AN SUM OF LOLCAT AN 1
+    VISIBLE FIBONACCEH VAR
+IM OUTTA YR LOOP
+
+KTHXBYE
+</code></pre>
+
+<p>Unfortuantely, the Lolcode syntax isn't very polished, so I have to declare two intermediate variables to store the values of the previous calls to the Fibonacceh function. Meh.</p>
+
+<p><em>My code and the results of running it look like this:</em></p>
+
+<p><img src="http://i.imgur.com/f9BCX05.png" alt="Imgur"></p>
+
+<p><img src="http://www.lolcats.com/images/u/11/49/lolcatsdotcomii0sbc7g7dpgu21m.jpg" alt="catz"></p>
+
+<h1>
+<a id="9-challenges" class="anchor" href="#9-challenges" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>9. Challenges</h1>
+
+<p>Some programming fun, coding challenges:</p>
+
+<ul>
+<li>A. Code a generator for '10 green bottles'</li>
+</ul>
+
+<pre><code>10 Green Bottles sitting on the wall,
+
+if one green bottle should accidentally fall,
+
+there'll be 9 green bottles sitting on the wall
+...
+</code></pre>
+
+<p>It's quite good fun to go to -10 green bottles, and then count up again.</p>
+
+<ul>
+<li>B. Code a generator for a binary search</li>
+</ul>
+
+<p>Python can do the <a href="http://openbookproject.net/thinkcs/python/english3e/list_algorithms.html"><strong>binary search</strong></a> like this:</p>
+
+<div class="highlight highlight-source-python"><pre><span class="pl-k">def</span> <span class="pl-en">search_binary</span>(<span class="pl-smi">xs</span>, <span class="pl-smi">target</span>):
+    <span class="pl-s"><span class="pl-pds">"""</span> Find and return the index of key in sequence xs <span class="pl-pds">"""</span></span>
+    lb <span class="pl-k">=</span> <span class="pl-c1">0</span>
+    ub <span class="pl-k">=</span> <span class="pl-c1">len</span>(xs)
+    <span class="pl-k">while</span> <span class="pl-c1">True</span>:
+        <span class="pl-k">if</span> lb <span class="pl-k">==</span> ub:   <span class="pl-c"># If region of interest (ROI) becomes empty</span>
+           <span class="pl-k">return</span> <span class="pl-k">-</span><span class="pl-c1">1</span>
+
+        <span class="pl-c"># Next probe should be in the middle of the ROI</span>
+        mid_index <span class="pl-k">=</span> (lb <span class="pl-k">+</span> ub) <span class="pl-k">//</span> <span class="pl-c1">2</span>
+
+        <span class="pl-c"># Fetch the item at that position</span>
+        item_at_mid <span class="pl-k">=</span> xs[mid_index]
+
+        <span class="pl-c"># print("ROI[{0}:{1}](size={2}), probed='{3}', target='{4}'"</span>
+        <span class="pl-c">#       .format(lb, ub, ub-lb, item_at_mid, target))</span>
+
+        <span class="pl-c"># How does the probed item compare to the target?</span>
+        <span class="pl-k">if</span> item_at_mid <span class="pl-k">==</span> target:
+            <span class="pl-k">return</span> mid_index      <span class="pl-c"># Found it!</span>
+        <span class="pl-k">if</span> item_at_mid <span class="pl-k">&lt;</span> target:
+            lb <span class="pl-k">=</span> mid_index <span class="pl-k">+</span> <span class="pl-c1">1</span>    <span class="pl-c"># Use upper half of ROI next time</span>
+        <span class="pl-k">else</span>:
+            ub <span class="pl-k">=</span> mid_index        <span class="pl-c"># Use lower half of ROI next time</span>
+</pre></div>
+
+<p>Can you write it in Lolcode?</p>
+
+<p><img src="http://i.imgur.com/8bAz4i6.jpg" alt="Imgur"></p>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/Teach-Programming/LolCode">Lolcode</a> is maintained by <a href="https://github.com/Teach-Programming">Teach-Programming</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
