@@ -1,4 +1,4 @@
-#1. INTRODUCTION
+# 1. INTRODUCTION
 
 
 We're going to be using a website called www.repl.it to have fun with lolcode.
@@ -7,9 +7,9 @@ We're going to be using a website called www.repl.it to have fun with lolcode.
 
 Don't forget the buttons in the top bar regularly:
 
-* Run - when you want to test your code
+* Run - when you want to test your code   
 
-* Save - when you think it works and you wanna share
+* Save - when you think it works and you wanna share   
 
 
 ![Imgur](http://i.imgur.com/l3EsgJk.png)
@@ -18,7 +18,7 @@ Don't forget the buttons in the top bar regularly:
 ![catz](http://www.lolcats.com/images/u/11/46/lolcatsdotcomqc2oos4nrd7aymcl.jpg)
 
 
-#2. OUTPUT
+# 2. OUTPUT
 
 ```VISIBLE``` prints to the standard output. 
 
@@ -30,14 +30,14 @@ HAI 1.2
 KTHXBYE
 ```
 
-*Add hip comments to your code using BTW for single line comments and OBTW / TLDR for multiline comments, like in my hello world program below.*
+* Add hip comments to your code using BTW for single line comments and OBTW / TLDR for multiline comments, like in my hello world program below.   
 
 
 ![Imgur](http://i.imgur.com/Gc6oLcE.png)
 
 ![catz](http://www.lolcats.com/images/u/07/35/lolcatsdotcom8514whl5iwcfrm1k.jpg)
 
-#3. INPUT
+# 3. INPUT
 
 Variables are declared using ```I HAS A```, and the variables can be initialized on the same line using using ```ITZ```.
 
@@ -51,7 +51,7 @@ HAI 1.2
 KTHXBYE
 ```
 
-*repl.it waits on the command line, as you can see when I run my program below:*
+* repl.it waits on the command line, as you can see when I run my program below:   
 
 
 ![Imgur](http://i.imgur.com/lAlxL1r.png)
@@ -59,7 +59,7 @@ KTHXBYE
 
 ![catz](http://www.lolcats.com/images/u/08/50/lolcatsdotcomrq4lywopmz2tyzsb.jpg)
 
-#4. CONDITIONALS
+# 4. CONDITIONALS
 
 The conditional ```if (Var1 == Var2){}``` is represented as ``` BOTH SAEM Var1 AN Var2``` and ``` O RLY?```, on a new line.
 
@@ -81,7 +81,7 @@ OIC
 KTHXBYE
 ```
 
-*I hope you liek the cool cat code, the results from my program look like this:*
+* I hope you liek the cool cat code, the results from my program look like this:   
 
 
 ![Imgur](http://i.imgur.com/LoJEg1O.png)
@@ -89,7 +89,7 @@ KTHXBYE
 
 ![catz](http://www.lolcats.com/images/u/08/51/lolcatsdotcomo1gehe7hiqmn05ig.jpg)
 
-#5. SWITCH STATEMENTS
+# 5. SWITCH STATEMENTS
 
 Multiple conditions can usually be written more neatly  as a Switch/Case statement, this is represented as ``` Var, WTF? and OMG Val``` for the switch / case.
 
@@ -115,13 +115,13 @@ KTHXBYE
 ```
 
 
-*The results from my code look like this:*
+* The results from my code look like this:   
 
 ![Imgur](http://i.imgur.com/nBedbq1.png)
 
 ![catz](http://www.lolcats.com/images/u/08/30/lolcatsdotcomdoozp810tzfcq0up.jpg)
 
-#6. LOOPS
+# 6. LOOPS
 
 Loops are a succinct way of representing repetition, this is represented as ''' IM IN YR LOOP / IM OUTTA YR LOOP'''.
 
@@ -146,14 +146,14 @@ IM OUTTA YR LOOP
 KTHXBYE
 ```
 
-*The results from my code look like this:*
+* The results from my code look like this:   
 
 
 ![Imgur](http://i.imgur.com/fHFRust.png)
 
 ![catz](http://www.lolcats.com/images/u/11/45/lolcatsdotcom3gp6wm7dw3jihq9t.jpg)
 
-#7. FUNCTIONS
+# 7. FUNCTIONS
 
 Functions are a useful way of putting statements together, so that they are easier to understand and reduce the amount of typing you have to do.
 
@@ -193,7 +193,7 @@ KTHXBYE
 
 ![catz](http://www.lolcats.com/images/u/11/49/lolcatsdotcomii0sbc7g7dpgu21m.jpg)
 
-#8. A LOL APP
+# 8. A LOL APP
 
 Ok, even though Lolcode is Turing complete, some people don't believe that it is a proper language, so here after all the games let's do some proper work!
 
@@ -203,11 +203,11 @@ Fun fact: Leonado Pisano, also known as Fibonacci (son of Bonacci), did absolute
 
 The sequence is 1 1 2 3 5 8 13 21 - each number is given as the some of the previous 2 numbers. 1 + 1 = 2, 1 + 2 = 3 etc
 
-* This neatly gives the generating function of the sequence,
+* This neatly gives the generating function of the sequence,   
 
 It ain't Poetry but it seems to work - it gives:
 
-* Fibonacci rule F_n = F_{n-1} + F_{n-2}.
+* Fibonacci rule F_n = F_{n-1} + F_{n-2}.   
 
 Which we can program easily with a function that calls itself twice!
 
@@ -248,17 +248,17 @@ KTHXBYE
 
 Unfortuantely, the Lolcode syntax isn't very polished, so I have to declare two intermediate variables to store the values of the previous calls to the Fibonacceh function. Meh.
 
-*My code and the results of running it look like this:*
+* My code and the results of running it look like this:   
 
 ![Imgur](http://i.imgur.com/f9BCX05.png)
 
 ![catz](http://www.lolcats.com/images/u/11/49/lolcatsdotcomii0sbc7g7dpgu21m.jpg)
 
-#9. Challenges
+# 9. Challenges
 
 Some programming fun, coding challenges:
 
-* A. Code a generator for '10 green bottles'
+* A. Code a generator for '10 green bottles'   
 
 
 ```
@@ -273,7 +273,7 @@ there'll be 9 green bottles sitting on the wall
 It's quite good fun to go to -10 green bottles, and then count up again.
 
 
-* B. Code a generator for a binary search
+* B. Code a generator for a binary search   
 
 Python can do the [**binary search**](http://openbookproject.net/thinkcs/python/english3e/list_algorithms.html) like this:
 
